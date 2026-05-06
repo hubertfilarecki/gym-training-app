@@ -21,9 +21,9 @@ Webowa aplikacja w PHP i MySQL do układania planów treningowych, śledzenia pr
 
 [Link do strony](https://hubfil.great-site.net/inz/logowanie.php)
 
-> Demo na moim hostingu pozwala zobaczyć interfejs aplikacji.
+> Demo aplikacji dostępne na zewnętrznym hostingu.
 
-**Dane logowania (demo):**
+**Konto demo:**
 
 * Login: `user1`
 * Hasło: `pass1`
