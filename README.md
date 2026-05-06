@@ -1,6 +1,6 @@
 # Aplikacja do planowania treningów
 
-Webowa aplikacja w PHP i MySQL do układania planów treningowych, śledzenia progresu i komunikacji między użytkownikami. Projekt powstał jako praca inżynierska — nacisk położony na funkcjonalności backendowe i praktyczną naukę budowania większych aplikacji webowych.
+Webowa aplikacja w PHP i MySQL do układania planów treningowych, śledzenia progresu i komunikacji między użytkownikami. Projekt powstał jako praca inżynierska - nacisk położony na funkcjonalności backendowe i praktyczną naukę budowania większych aplikacji webowych.
 
 ---
 
@@ -107,7 +107,7 @@ rejestruj.php
 
 ## Zakres i ograniczenia
 
-Aplikacja powstawała bez frameworka MVC, dlatego część logiki pozostała w większych plikach. Priorytetem była funkcjonalność i nauka — nie pełna optymalizacja architektury. Pod koniec projektu przeprowadzony został częściowy refactor: wydzielenie helperów, uporządkowanie inicjalizacji i ograniczenie duplikacji kodu.
+Aplikacja powstawała bez frameworka MVC, dlatego część logiki pozostała w większych plikach. Priorytetem była funkcjonalność i nauka - nie pełna optymalizacja architektury. Pod koniec projektu przeprowadzony został częściowy refactor: wydzielenie helperów, uporządkowanie inicjalizacji i ograniczenie duplikacji kodu.
 
 ---
 
