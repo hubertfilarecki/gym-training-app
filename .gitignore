@@ -1,0 +1,15 @@
+# Environment
+.env
+.env.*
+
+# User uploads (private)
+uploads/
+
+# Logs
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

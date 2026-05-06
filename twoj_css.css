@@ -1,0 +1,225 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f2f2f2;
+    min-height: 100vh;
+    color: #3a3a3a;
+}
+
+.login-form {
+    background-color: #ffffff;
+    margin-top: 100px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: #0b1d3a;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    border-radius: 10px;
+    box-shadow: none;
+    border-color: #ced4da;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #ff6b00;
+    box-shadow: 0 0 5px rgba(255, 107, 0, 0.5);
+}
+
+.btn-primary {
+    background-color: #ff6b00;
+    border-color: #ff6b00;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #e65c00;
+}
+
+.register-link {
+    color: #ff6b00;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+}
+
+.navbar { 
+    min-height: 60px; 
+    font-size: 15px; 
+}
+
+.custom-navbar {
+    background-color: #0b1d3a;
+    height: 80px;
+    align-items: center;
+}
+
+.navbar .btn {
+    background-color: #ff6b00;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    transition: all 0.3s ease;
+    margin-right: 10px;
+}
+
+.navbar .btn:hover {
+    background-color: #e65c00;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.navbar .btn-outline-danger {
+    background-color: transparent;
+    border: 2px solid #dc3545;
+    color: #dc3545;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.navbar .btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.navbar .user-name {
+    border-radius: 25px;
+    padding: 8px 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 15px;
+    margin-left: -15px;
+}
+
+.sekcja1 {
+    text-align: left;
+    border-color: #0b1d3a; 
+}
+
+.page-footer {
+    width: 100%;
+    font-size: 11px;
+    color: #0b1d3a;
+    border-top: 2px solid #0b1d3a;
+    background-color: #f2f2f2;
+    margin: 0;
+    text-align: left;
+    padding: 10px 0;
+}
+
+.custom-footer {
+    background-color: #0b1d3a;
+    padding: 15px 0;
+    font-size: 14px;
+    color: white;
+    text-align: left;
+    border-top: 2px solid #ff6b00;
+}
+
+table {
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+}
+
+th {
+    background-color: #0b1d3a;
+    color: #000000;
+    padding: 12px 15px;
+    vertical-align: middle;
+}
+
+td {
+    padding: 10px 15px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+    color: #3a3a3a;
+    vertical-align: middle;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+a {
+    color: #ff6b00;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transform: translateY(-2px);
+}
+
+td a {
+    background-color: #ff6b00;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+td a:hover {
+    background-color: #e65c00;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.table-darkblue {
+    background-color: #0d6efd !important;
+    color: white !important;
+}
+
+.active-song {
+    background-color: #ffe5cc;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    td, th {
+        padding: 8px 10px;
+    }
+}
