@@ -16,6 +16,12 @@ function json_header(): void {
     header('Content-Type: application/json');
 }
 
+function deny_demo_write(): void {
+    json_header();
+    echo json_encode(['success' => false, 'error' => 'Konto demo ma tylko podglad']);
+    exit();
+}
+
 function get_user_id(): int {
     return (int) $_SESSION['user_id'];
 }
@@ -84,6 +90,9 @@ if (isset($_GET['get_exercises'])) {
 
 // --- POST: Tworzenie nowego planu treningowego
 if (isset($_POST['create_plan'])) {
+    if (is_demo_user()) {
+        deny_demo_write();
+    }
     json_header();
     
     $user_id = get_user_id();
@@ -229,6 +238,9 @@ if (isset($_GET['get_plan_details']) && isset($_GET['plan_id'])) {
 
 // --- POST: Zapisywanie aktywności treningowej
 if (isset($_POST['save_activity'])) {
+    if (is_demo_user()) {
+        deny_demo_write();
+    }
     json_header();
     
     $user_id = get_user_id();
@@ -320,6 +332,9 @@ if (isset($_GET['get_exercise_stats']) && isset($_GET['plan_exercise_id'])) {
 
 // --- POST: Tworzenie nowego ćwiczenia
 if (isset($_POST['create_exercise'])) {
+    if (is_demo_user()) {
+        deny_demo_write();
+    }
     json_header();
     
     $user_id = get_user_id();
@@ -556,6 +571,9 @@ if (isset($_GET['get_weekly_summary'])) {
 
 // --- POST: Aktualizowanie istniejącego planu
 if (isset($_POST['update_plan'])) {
+    if (is_demo_user()) {
+        deny_demo_write();
+    }
     json_header();
     
     $user_id = get_user_id();
@@ -637,6 +655,9 @@ if (isset($_POST['update_plan'])) {
 
 // --- POST: Usuwanie planu
 if (isset($_POST['delete_plan'])) {
+    if (is_demo_user()) {
+        deny_demo_write();
+    }
     json_header();
     
     $user_id = get_user_id();

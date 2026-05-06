@@ -19,6 +19,12 @@ function json_header(): void {
     header('Content-Type: application/json');
 }
 
+function deny_demo_write(): void {
+    json_header();
+    echo json_encode(['success' => false, 'error' => 'Konto demo ma tylko podglad']);
+    exit();
+}
+
 function get_user_id(): int {
     return (int) $_SESSION['user_id'];
 }
@@ -31,6 +37,9 @@ function get_int(array $source, string $key): int {
 
 // --- POST: Kasowanie wiadomości (tylko admin)
 if (isset($_POST['delete_message']) && $_SESSION['role'] === 'admin') {
+    if (is_demo_user()) {
+        deny_demo_write();
+    }
     json_header();
     
     $message_id = get_int($_POST, 'message_id');
@@ -61,6 +70,9 @@ if (isset($_POST['delete_message']) && $_SESSION['role'] === 'admin') {
 
 // --- POST: Wysyłanie publicznych wiadomości przez AJAX
 if (isset($_POST['ajax_public_message'])) {
+    if (is_demo_user()) {
+        deny_demo_write();
+    }
     json_header();
     
     $message = trim($_POST['message'] ?? '');
@@ -193,6 +205,9 @@ if (isset($_GET['get_conversations'])) {
 
 // --- POST: Oznaczanie wiadomości jako przeczytane
 if (isset($_POST['mark_as_read'])) {
+    if (is_demo_user()) {
+        deny_demo_write();
+    }
     json_header();
     
     $other_user_id = get_int($_POST, 'other_user_id');
@@ -293,6 +308,9 @@ if (isset($_GET['private_chat']) && isset($_GET['user_id'])) {
 
 // --- POST: Obsługa wysyłania prywatnych wiadomości przez AJAX z plikiem
 if (isset($_POST['ajax_private_message'])) {
+    if (is_demo_user()) {
+        deny_demo_write();
+    }
     json_header();
     
     $message = trim($_POST['message'] ?? '');

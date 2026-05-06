@@ -35,3 +35,7 @@ function current_user_role(): string {
 function current_profile_picture(): string {
     return isset($_SESSION['profile_picture']) ? (string) $_SESSION['profile_picture'] : 'uploads/default.png';
 }
+
+function is_demo_user(): bool {
+    return isset($_SESSION['role']) && $_SESSION['role'] === 'demo';
+}
