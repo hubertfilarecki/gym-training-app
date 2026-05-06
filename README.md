@@ -19,9 +19,9 @@ Webowa aplikacja w PHP i MySQL do układania planów treningowych, śledzenia pr
 
 ## Demo
 
-[GitHub Pages](https://hubertfilarecki.github.io/gym-training-app/)
+[Link do strony](https://hubfil.great-site.net/inz/logowanie.php)
 
-> Demo na GitHub Pages pozwala zobaczyć interfejs aplikacji.
+> Demo na moim hostingu pozwala zobaczyć interfejs aplikacji.
 
 **Dane logowania (demo):**
 
