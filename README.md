@@ -21,7 +21,12 @@ Webowa aplikacja w PHP i MySQL do układania planów treningowych, śledzenia pr
 
 [GitHub Pages](https://hubertfilarecki.github.io/gym-training-app/)
 
-> Strona na GitHub Pages to jedynie statyczny landing page projektu — backend PHP i baza danych nie są hostowane publicznie.
+> Demo na GitHub Pages pozwala zobaczyć interfejs aplikacji.
+
+**Dane logowania (demo):**
+
+* Login: `user1`
+* Hasło: `pass1`
 
 ---
 
