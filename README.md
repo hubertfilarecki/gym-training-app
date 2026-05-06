@@ -1,36 +1,42 @@
-# Aplikacja do planowania treningów
+# Aplikacja do planowania treningów / Workout Planning Application
 
 Webowa aplikacja w PHP i MySQL do układania planów treningowych, śledzenia progresu i komunikacji między użytkownikami. Projekt powstał jako praca inżynierska - nacisk położony na funkcjonalności backendowe i praktyczną naukę budowania większych aplikacji webowych.
+
+A web application in PHP and MySQL for creating training plans, tracking progress, and communication between users. Developed as an engineering thesis - with a focus on backend features and hands-on learning building a larger web app.
 
 ---
 
 ## Preview
 
-![Widok głównego panelu](./docs/assets/plany-treningowe.png)
+![Widok głównego panelu / Main panel view](./docs/assets/plany-treningowe.png)
 
-### Galeria
+### Galeria / Gallery
 
-![Tworzenie planu](./docs/assets/tworzenie-planu.png)
-![Komunikator](./docs/assets/komunikator.png)
-![Wykresy postępów](./docs/assets/wykresy.png)
-![Goście portalu](./docs/assets/goscie-portalu.png)
+![Tworzenie planu / Creating a plan](./docs/assets/tworzenie-planu.png)
+![Komunikator / Messenger](./docs/assets/komunikator.png)
+![Wykresy postępów / Progress charts](./docs/assets/wykresy.png)
+![Goście portalu / Portal guests](./docs/assets/goscie-portalu.png)
 
 ---
 
 ## Demo
 
-[Link do strony](https://hubfil.great-site.net/inz/logowanie.php)
+[Link do strony / Link to the site](https://hubfil.great-site.net/inz/logowanie.php)
 
 > Demo aplikacji dostępne na zewnętrznym hostingu.
 
-**Konto demo:**
+> The demo of the application is hosted on an external server.
+
+**Konto demo / Demo account:**
 
 * Login: `user1`
-* Hasło: `pass1`
+* Hasło / Password: `pass1`
 
 ---
 
-## Funkcje
+## Polski
+
+### Funkcje
 
 * Rejestracja i logowanie użytkowników
 * System sesji i ról
@@ -46,14 +52,14 @@ Webowa aplikacja w PHP i MySQL do układania planów treningowych, śledzenia pr
 
 ---
 
-## Technologie
+### Technologie
 
 * Backend: PHP, MySQL / MariaDB
 * Frontend: HTML5, CSS3, Bootstrap, JavaScript (AJAX)
 
 ---
 
-## Uruchomienie lokalne
+### Uruchomienie lokalne
 
 ```bash
 git clone https://github.com/hubertfilarecki/gym-training-app.git
@@ -76,7 +82,7 @@ DB_PASSWORD=twoje_haslo
 
 ---
 
-## Struktura projektu
+### Struktura projektu
 
 ```txt
 app/
@@ -97,7 +103,7 @@ rejestruj.php
 
 ---
 
-## Bezpieczeństwo
+### Bezpieczeństwo
 
 * Dane dostępowe do bazy przechowywane lokalnie w `.env`
 * Plik `.env` oraz katalog `uploads/` są wykluczone z repozytorium
@@ -105,13 +111,13 @@ rejestruj.php
 
 ---
 
-## Zakres i ograniczenia
+### Zakres i ograniczenia
 
 Aplikacja powstawała bez frameworka MVC, dlatego część logiki pozostała w większych plikach. Priorytetem była funkcjonalność i nauka - nie pełna optymalizacja architektury. Pod koniec projektu przeprowadzony został częściowy refactor: wydzielenie helperów, uporządkowanie inicjalizacji i ograniczenie duplikacji kodu.
 
 ---
 
-## Czego się nauczyłem
+### Czego się nauczyłem
 
 * Budowania aplikacji webowych w PHP od podstaw
 * Pracy z MySQL i modelowania relacji w bazie danych
@@ -123,6 +129,107 @@ Aplikacja powstawała bez frameworka MVC, dlatego część logiki pozostała w w
 
 ---
 
-## Licencja
+### Licencja
+
+MIT
+
+---
+
+## English
+
+### Features
+
+* User registration and login
+* Session and role management
+* Create and edit workout plans
+* Training history and progress tracking
+* Statistics and progress charts
+* Private messaging between users
+* Public chat
+* File and image uploads
+* Admin panel
+* User activity logging
+* Responsive UI (Bootstrap)
+
+---
+
+### Technologies
+
+* Backend: PHP, MySQL / MariaDB
+* Frontend: HTML5, CSS3, Bootstrap, JavaScript (AJAX)
+
+---
+
+### How to run locally
+
+```bash
+git clone https://github.com/hubertfilarecki/gym-training-app.git
+```
+
+1. Create a `.env` file in the project root.
+2. Fill in the database connection settings (example below).
+3. Import the MySQL database schema.
+4. Run the project on a local PHP server (XAMPP, Laragon, etc.).
+
+Sample `.env`:
+
+```env
+DB_HOST=localhost
+DB_PORT=3306
+DB_NAME=your_database
+DB_USER=your_user
+DB_PASSWORD=your_password
+```
+
+---
+
+### Project structure
+
+```txt
+app/
+├── bootstrap/
+└── helpers/
+
+docs/
+└── assets/
+
+uploads/
+
+plany.php
+progres.php
+komunikator.php
+logowanie.php
+rejestruj.php
+```
+
+---
+
+### Security
+
+* Database credentials are stored locally in `.env`
+* The `.env` file and the `uploads/` directory are excluded from the repository
+* The repo does not contain any private data or secrets
+
+---
+
+### Scope & limitations
+
+The application was developed without an MVC framework, so some logic remains inside larger files. Priority was on functionality and learning rather than perfect architecture. A partial refactor was performed near the end of the project: helpers were extracted, initialization was organized, and code duplication was reduced.
+
+---
+
+### What I learned
+
+* Building web applications in PHP from scratch
+* Working with MySQL and modeling relational data
+* Session handling and user authorization
+* AJAX-based communication without page reloads
+* File upload handling and server-side validation
+* Organizing and refactoring a larger PHP project
+* Creating a responsive UI with Bootstrap
+
+---
+
+### License
 
 MIT
